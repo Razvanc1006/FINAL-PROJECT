@@ -115,3 +115,12 @@ background: radial-gradient(to bottom right, #8B9AB0, #6A83AB);
     background-image: url("https://airfixture.com/wp-content/uploads/2019/05/What-to-know-when-designing-high-rise-buildings.jpg");
     background-size: cover;
   }
+  input {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 16px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(109, 93, 93, 0.4);
+    text-align: center;
+  }
