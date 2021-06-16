@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #8B9AB0;
+background: -webkit-radial-gradient(top left, #8B9AB0, #6A83AB);
+background: -moz-radial-gradient(top left, #8B9AB0, #6A83AB);
+background: radial-gradient(to bottom right, #8B9AB0, #6A83AB);
+}
+input,
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+.sign-up-cont {
+  position: relative;
+  width: 900px;
+  height: 550px;
+  background: #fff;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.formular {
+  position: relative;
+  width: 640px;
+  height: 100%;
+  padding: 50px 30px;
+}
+.formular h1 {
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  width: 260px;
+  margin: 25px auto 0;
+  text-align: center;
+}
+button {
+  display: block;
+  
+  margin: 15px  auto;
+  width: 260px;
+  height: 36px;
+  border-radius: 30px;
+  background: background: #338B65;
+  background: #4A8E84;
+  background: #8B9AB0;
+background: -webkit-radial-gradient(top left, #8B9AB0, #6A83AB);
+background: -moz-radial-gradient(top left, #8B9AB0, #6A83AB);
+background: radial-gradient(to bottom right, #8B9AB0, #6A83AB);
+  font-size: 15px;
+  cursor: pointer;
+}
+.already-user {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0c0101;
+  cursor: pointer;
+}
+.social-media {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+  
+.social-media ul {
+    list-style: none;
+}
+  
+.social-media ul li {
+        border: 1px solid #dddddd;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 5px;
+        height: 40px;
+        width: 40px;
+        background: -webkit-radial-gradient(top left, #8B9AB0, #6A83AB);
+        background: -moz-radial-gradient(top left, #8B9AB0, #6A83AB);
+        background: radial-gradient(to bottom right, #8B9AB0, #6A83AB);
+      
+}
+.right-container {
+    overflow: hidden;
+    position: absolute;
+    left: 640px;
+    top: 0;
+    
+    height: 100%;
+    padding-left: 260px;
+    background: #fff;
+}
+.img {
+    overflow: hidden;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 260px;
+    height: 100%;
+    padding-top: 360px;
+    background-image: url("https://airfixture.com/wp-content/uploads/2019/05/What-to-know-when-designing-high-rise-buildings.jpg");
+    background-size: cover;
+  }
