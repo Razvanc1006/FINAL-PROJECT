@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="sign-up-cont">
-      <form method="POST" class="formular">
+      <form  class="formular" id="sign-up"  action="sign-in.html">
         <h1>Register Here</h1>
         <div class="social-media">
           <ul>
@@ -21,14 +21,18 @@
           </ul>
         </div>
         <label for="fullname">Full name: </label>
-        <input type="text" name="fullname" id="fullname" />
+        <input type="text" name="fullname" id="fullname" required/>
         <label for="username">Username:</label>
-        <input type="text" name="username" id="username" />
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email"/>
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="password" />
+        <input type="text" name="username" id="username" required/>
+        <div id="error">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" />
         
+        </div>
+        <div id ="pass-err">
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password" required/>
+        </div>
         
         <button>Sign Up</button> <br/>
         <p class="already-user"><a href="sign-in.html" target="_blank">Already have an accout ? Sign in here ! </a></p>
@@ -37,5 +41,6 @@
         <div class="img"></div>
       </div>
     </div>
+    <script type="text/javascript" src="../js/formular.js"></script>
   </body>
 </html>
