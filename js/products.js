@@ -73,15 +73,18 @@ filterProducts('all');
 const priceBtn = document.getElementById('price');
 const minPrice = document.getElementById('min');
 const maxPrice = document.getElementById('max');
+const priceFilter = document.getElementById('price-filter');
 priceBtn.addEventListener('click',function(e){
     e.preventDefault();
 
     for(let i=0;i< productCard.length;i++){
         productCard[i].classList.remove('show');
-        if(Number(products[i].price) >= Number(minPrice.value) && Number(products[i].price) >= Number(maxPrice.value))
+        if(Number(products[i].price) >= Number(minPrice.value) && Number(products[i].price) <= Number(maxPrice.value))
         {
             
             productCard[i].classList.add('show');
+            priceFilter.appendChild(productCard[i]);
+            
         }
     }
 });

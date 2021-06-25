@@ -76,3 +76,10 @@
   flex-direction: column;
   padding-top: 25px;
 }
+#price-filter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
