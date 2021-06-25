@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/products.css" />
+    
+    <title>Products Page</title>
+  </head>
+  <body>
+    <header>
+        <div class="container">
+            <nav>
+                <label for="" class="logo">Imobiliare</label>
+                <ul> 
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#t">About</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Feedback</a></li>
+
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="filter">
+              <h2>Filter products</h2>
+              <ul>
+                <li class="all" onclick="filterProducts('all')">Show All</li>
+                <li class="garsoniera" onclick="filterProducts('garsoniera')" >Garsoniere</li>
+                <li class="doua-camere" onclick="filterProducts('doua-camere')">Apartamente 2 camere</li>
+                <li class="trei-camere" onclick="filterProducts('trei-camere')">Apartamente 3 camere</li>
+                <li class="casa" onclick="filterProducts('casa')">Case</li>
+                <li class="casa-etaj" onclick="filterProducts('etaj')">Case cu etaj</li>
+                <li class="rulota" onclick="filterProducts('rulota')">Rulote</li>
+              </ul>
+            </div>
+            <div id="products"></div>
+        </div>
+    </main>
+    <footer>
+        <h4>Contact</h4>
+        <ul>
+          <li>Email: jhon.doe@gmail.com</li>
+          <li>Phone: 07xxxxxxx</li>
+          <li>Twiterr: </li>
+        </ul>
+        <p>&copy;Jhon Doe</p>
+      </footer>
+      <script type="text/javascript" src="../js/products.js" ></script>
+  </body>
+</html>
