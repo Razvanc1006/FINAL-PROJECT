@@ -28,7 +28,7 @@ const products = [
 ];
 
 const productsContainer = document.getElementById('products');
-const productCard = document.getElementsByClassName('product-card');
+
 
 for(let product of products){
     const card = document.createElement('div');
@@ -53,38 +53,35 @@ for(let product of products){
     productsContainer.appendChild(card);
 }
 
+const productCard = document.getElementsByClassName('product-card');
 
 function filterProducts(filterType){
+
     if(filterType == "all") filterType = "";
     for(let i=0 ;i < productCard.length;i++)
     {
-        removeClass(productCard[i],'show');
-        if(productCard[i].className.indexOf(filterType) > -1) addClass(productCard[i],'show');
+        
+        productCard[i].classList.remove('show')
+        if(productCard[i].className.indexOf(filterType) > -1) productCard[i].classList.add('show');
     }
     
 }
 
-function addClass(element,name){
-    let x,y;
-    x = element.className.split(" ");
-    y = name.split(" ");
-    for(let i=0; i< y.length;i++){
-        if(x.indexOf(y[i]) == -1 ){
-            element.className +=" " + y[i];
-        }
-    }
-}
-
-function removeClass(element,name){
-    let  x,y;
-    x = element.className.split(" ");
-    y = name.split(" ");
-    for(let i=0;i < y.length;i++) {
-        while(x.indexOf(y[i]) > -1 ) {
-            x.splice(x.indexOf(y[i]),1);
-        }
-    }
-    element.className = x.join(" ");
-}
 
 filterProducts('all');
+
+const priceBtn = document.getElementById('price');
+const minPrice = document.getElementById('min');
+const maxPrice = document.getElementById('max');
+priceBtn.addEventListener('click',function(e){
+    e.preventDefault();
+
+    for(let i=0;i< productCard.length;i++){
+        productCard[i].classList.remove('show');
+        if(Number(products[i].price) >= Number(minPrice.value) && Number(products[i].price) >= Number(maxPrice.value))
+        {
+            
+            productCard[i].classList.add('show');
+        }
+    }
+});
